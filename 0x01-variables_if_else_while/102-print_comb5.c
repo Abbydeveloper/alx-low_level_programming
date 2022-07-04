@@ -24,7 +24,7 @@ while (i < 58)
 {
 op1 = (h * 10) + g;
 op2 = (e * 10) + i;
-if (op1 < op3)
+if (op1 < op2)
 {
 putchar(h);
 putchar(g);
@@ -40,7 +40,7 @@ i++;
 }
 e++;
 }
-g++
+g++;
 }
 h++;
 }
