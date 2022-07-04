@@ -9,16 +9,12 @@
 
 int main(void)
 {
-char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-int i, j;
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int i;
 
-for (i = 0; 1 < 26; i++)
+for (i = 0; 1 < 52; i++)
 {
 putchar(alp[i]);
-}
-for (j = 0; j < 26; j++)
-{
-putchar(toupper(alp[j]));
 }
 putchar('\n');
 return (0);
