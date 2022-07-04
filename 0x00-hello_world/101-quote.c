@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
-* main
+* main - Entry point
 *
 * Return: Always 1 (Success)
 */
