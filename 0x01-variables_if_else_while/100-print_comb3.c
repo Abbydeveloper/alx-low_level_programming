@@ -32,7 +32,6 @@ i++;
 }
 e++;
 }
-putchar('
-');
+putchar('\n');
 return (0);
 }
