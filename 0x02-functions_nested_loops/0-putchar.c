@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* printsomething - prints "something"
+* main - prints "something"
 *
-* Return: nothing
+* Return: 0 (Success)
 */
 
-void printsomething(void)
+int main(void)
 {
 _putchar('_');
 _putchar('p');
@@ -17,5 +17,5 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-
+return (0);
 }
