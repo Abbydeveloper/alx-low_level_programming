@@ -6,7 +6,7 @@
 * Return: 0 (Success)
 */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 
