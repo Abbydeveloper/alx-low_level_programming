@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* main - Prints alphabet
+* print_alphabet - Prints alphabet
 *
 * Return: 0 (Success)
 */
 
-int main(void)
+int print_alphabet(void)
 {
 char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 
