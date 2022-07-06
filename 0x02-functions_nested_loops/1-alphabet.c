@@ -8,12 +8,12 @@
 
 int main(void)
 {
-char[26] = "abcdefghijklmnopqrstuvwxyz";
+char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 
 int i = 0;
 for (i = 0; i < 26; i++)
 {
-_putchar(char[i]);
+_putchar(alp[i]);
 }
 _putchar("\n");
 }
