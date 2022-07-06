@@ -15,6 +15,8 @@ for (i = 0; i < 26; i++)
 {
 _putchar(alp[i]);
 }
-_putchar("\n");
+_putchar('\n');
+
+
 }
 return (0);
