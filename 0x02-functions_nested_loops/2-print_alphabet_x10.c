@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* main - Prints the alphabet 10 times
+* print_alphabet_x10 - Prints the alphabet 10 times
 *
 * Return: nothing
 */
 
-void main(void)
+void print_alphabet_x10(void)
 {
-char alp[26] = abcdefghijklmnopqrstuvwxyz;
+char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 
 int i, j;
 
