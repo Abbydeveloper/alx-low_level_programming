@@ -3,7 +3,4 @@
 
 int _putchar(char c);
 
-
-void printsomething(void);
-
 #endif
