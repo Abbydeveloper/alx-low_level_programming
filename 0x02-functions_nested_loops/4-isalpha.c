@@ -6,6 +6,7 @@
 *
 * Return: 1 (Success)
 * On error, return 0
+*/
 
 int _isalpha(int c)
 {
