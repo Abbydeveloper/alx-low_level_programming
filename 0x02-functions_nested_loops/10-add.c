@@ -3,7 +3,7 @@
 /**
 * add - add two integer type numbers
 *@a: first int
-@b: second int
+* @b: second int
 *
 * Return: 0 Always
 */
