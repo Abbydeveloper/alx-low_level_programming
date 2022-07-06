@@ -17,6 +17,7 @@ _putchar(alp[i]);
 }
 _putchar('\n');
 
-
-}
 return (0);
+}
+
+
