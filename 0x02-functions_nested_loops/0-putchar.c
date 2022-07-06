@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* printsomething - prints "something"
+* main - prints "something"
 *
 * Return: nothing
 */
 
-void printsomething(void)
+void main(void)
 {
 _putchar('_');
 _putchar('p');
