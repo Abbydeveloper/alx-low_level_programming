@@ -2,7 +2,7 @@
 
 /**
 * _islower - Checks for lowercase character
-*
+* @c
 * Return: 1 (On Success)
 * On error 0 is returned and errno is set appropriately
 */
