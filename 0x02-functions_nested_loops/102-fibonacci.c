@@ -15,11 +15,11 @@ while (count <= 50)
 {
 if (count == 50)
 {
-printf(\"%lu\n\", j);
+printf("%lu\n", j);
 }
 else
 {
-printf(\"%lu, \", j);
+printf("%lu, ", j);
 }
 
 k = j;
