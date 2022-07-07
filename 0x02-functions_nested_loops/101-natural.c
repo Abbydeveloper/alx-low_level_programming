@@ -25,8 +25,8 @@ continue;
 }
 }
 printf("%d", total);
-printf("
-");
+printf("\n");
+
 
 return (0);
 }
