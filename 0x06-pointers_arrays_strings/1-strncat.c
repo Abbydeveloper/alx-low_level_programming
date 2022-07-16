@@ -9,7 +9,7 @@
  * Return: Pointer to dest
  */
 
-chat *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int count = 0, count2 = 0;
 
