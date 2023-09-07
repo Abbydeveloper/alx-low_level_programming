@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $CILE -o c
+gcc $CILE -o c
