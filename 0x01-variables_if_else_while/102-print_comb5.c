@@ -23,7 +23,7 @@ int main(void)
 				putchar(j / 10 + '0');
 				putchar(j % 10 + '0');
 
-				if ( j <= k-1  && i < k - 2)
+				if (j <= k - 1  && i < k - 2)
 				{
 					putchar(',');
 					putchar(' ');
