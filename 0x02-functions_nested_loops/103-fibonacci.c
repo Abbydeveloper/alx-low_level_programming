@@ -14,6 +14,7 @@ int main(void)
 	while (i < limit)
 	{
 		long int n;
+
 		if (j > 4000000)
 			break;
 
