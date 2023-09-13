@@ -43,5 +43,5 @@ int main(void)
 		k1 = n1;
 		k2 = n2;
 	}
-	return (0)
+	return (0);
 }
