@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * natural - print the sum of all multiples of 3 or 5 below 1023
+ * main - print the sum of all multiples of 3 or 5 below 1023
  *
  */
 
-void natural(void)
+void (void)
 {
 	int i, j;
 
