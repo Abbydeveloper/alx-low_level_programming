@@ -15,7 +15,7 @@ void print(long n)
 }
 
 /**
- * print_ times_table - print the 9 times table
+ * print_times_table - print the 9 times table
  *
  * @n: n times table
  */
