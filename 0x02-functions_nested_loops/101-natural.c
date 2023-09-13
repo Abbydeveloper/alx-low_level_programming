@@ -3,9 +3,10 @@
 /**
  * main - print the sum of all multiples of 3 or 5 below 1023
  *
+ * Return: 1 if success
  */
 
-void (void)
+int main(void)
 {
 	int i, j;
 
@@ -15,4 +16,5 @@ void (void)
 			j += i;
 	}
 	printf("%d\n", j);
+	return (1);
 }
