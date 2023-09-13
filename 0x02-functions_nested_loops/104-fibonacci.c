@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int i = 0, limit = 98;
+	int i = 3, limit = 98;
 	long int j = 1, k = 1;
 
 	while (i < limit)
