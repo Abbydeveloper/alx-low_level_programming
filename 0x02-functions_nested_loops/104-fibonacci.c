@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i = 0, limit = 98;
-	unsigned long int j = 1, k = 1;
+	unsigned long int j = 1, k = 1, k1, k2, j1, j2;
 
 	for (i = 0; i < 91; i++)
 	{
@@ -35,9 +35,9 @@ int main(void)
 		n2 = j2 + k2;
 
 		if (i < limit - 1)
-			printf("%lu, " + "%lu", k1, k2);
+			printf("%lu, ", k1 + (k2 / 1000000000));
 		else
-			printf("%lu" + "%lu\n", k1 + k2);
+			printf("%lu\n", k1 + (k2 % 1000000000));
 		j1 = k1;
 		j2 = k2;
 		k1 = n1;
