@@ -8,15 +8,22 @@
 
 int main(void)
 {
-	int i = 1, j = 1;
+	int i = 0, limit = 50;
+	long int j = 1, k = 1;
 
-	while (j < 50)
-	{
-		printf(j);
-		i = j;
-		j += i;
-		if (j < 50)
-			printf(", ");
+	while (i < limit)
+	{	
+		long int n;
+		n = j + k;
+
+		if (i < limit - 1)
+			printf("%lu, ", k);
+		else
+			printf("%lu\n", k);
+		j = k;
+		k = n;
+		
+		i++;
 	}
 	return (0);
 }
