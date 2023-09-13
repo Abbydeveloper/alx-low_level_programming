@@ -12,8 +12,9 @@ int main(void)
 	long int j = 1, k = 1;
 
 	while (i < limit)
-	{	
+	{
 		long int n;
+
 		n = j + k;
 
 		if (i < limit - 1)
@@ -22,7 +23,7 @@ int main(void)
 			printf("%lu\n", k);
 		j = k;
 		k = n;
-		
+
 		i++;
 	}
 	return (0);
