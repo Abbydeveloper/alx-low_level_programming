@@ -11,9 +11,7 @@
 
 int _isdigit(int c)
 {
-	int ascii_char = c + '0';
-
-	if (ascii_char <= 48 && ascii_char >= 57)
+	if (c >= '0' && c <= '9')
 		return (1);
 	else
 		return (0);
