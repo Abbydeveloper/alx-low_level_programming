@@ -23,5 +23,5 @@ void print_number(int n)
 		if (n / i != 0)
 			_putchar((n / i) % 10 + '0');
 	}
-	
+
 }
