@@ -12,8 +12,8 @@ void puts_half(char *str)
 	int i, j;
 
 	i = strlen(str);
-	j = (i % 2 == 0) ? i / 2 : (i - 1) / 2;
-	printf("%d, %d", i, j);
+	j = (i % 2 == 0) ? i / 2 : ((i - 1) / 2) - 1;
+
 	for (; j < i; j++)
 		_putchar(str[j]);
 	_putchar('\n');
