@@ -22,6 +22,13 @@ int _atoi(char *s)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
+			if (n > INT_MAX / 10 || (n == INT_MAX / 10 && s[i] - '0' > 7))
+			{
+				if (neg_count == 1)
+					return (INT_MAX);
+				else
+					return (INT_MIN);
+			}
 			n = (n * 10) + (s[i] - '0');
 
 			if (s[i + 1] < '0' || s[i + 1] > '9')
@@ -36,15 +43,6 @@ int _atoi(char *s)
 	if (!n)
 		return (0);
 	n *= neg_count;
-	if (n > INT_MAX / 10
-			|| (n == INT_MAX / 10
-				&& s[i] - '0' > 7))
-	{
-		if (neg_count == 1)
-			return INT_MAX;
-		else
-			return INT_MIN;
-	}
 	return (n);
 }
 
