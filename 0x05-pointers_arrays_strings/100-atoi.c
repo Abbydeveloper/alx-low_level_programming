@@ -11,7 +11,7 @@
 
 int _atoi(char *s)
 {
-	int length, i;
+	int length, i, neg_count = 1, n = 0;
 
 	length = strlen(s);
 
@@ -19,10 +19,23 @@ int _atoi(char *s)
 		return (0);
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		int n = (int)(s[i]);
-		printf("%c", n);
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			n = (n * 10) + (s[i] - '0');
+
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+		}
+		else if (s[i] == '-')
+			neg_count *= -1;
+		else
+			continue;
 	}
-	printf("\n");
-	return (length);
+
+	if (!n)
+		return (0);
+	n *= neg_count;
+
+	return (n);
 }
 
