@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -11,8 +12,7 @@
 
 int _atoi(char *s)
 {
-	int length, i, neg_count = 1;
-        long int n = 0;
+	int length, i, neg_count = 1, n = 0;
 
 	length = strlen(s);
 
@@ -36,7 +36,15 @@ int _atoi(char *s)
 	if (!n)
 		return (0);
 	n *= neg_count;
-
+	if (n > INT_MAX / 10
+			|| (n == INT_MAX / 10
+				&& s[i] - '0' > 7))
+	{
+		if (neg_count == 1)
+			return INT_MAX;
+		else
+			return INT_MIN;
+	}
 	return (n);
 }
 
