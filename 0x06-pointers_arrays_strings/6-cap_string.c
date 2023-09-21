@@ -16,7 +16,8 @@ char *cap_string(char *s)
 	{
 		if (s[i] && s[i - 1])
 		{
-			if (s[i - 1] == '\t' ||
+			if (i == 0 ||
+					s[i - 1] == '\t' ||
 					s[i - 1] == '\n' ||
 					s[i - 1] == ' ' ||
 					s[i - 1] == '.' ||
