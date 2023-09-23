@@ -24,7 +24,7 @@ void print_number(int n)
 	{
 		if (n >= INT_MAX || n <= INT_MIN)
 			n = INT_MAX;
-		printf("%d\n", n);
+
 		if (n / i != 0)
 			_putchar((n / i) % 10 + '0');
 	}
