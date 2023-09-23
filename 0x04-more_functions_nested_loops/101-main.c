@@ -8,18 +8,18 @@
  */
 int main(void)
 {
-	print_number(98);
+	print_number(-898);
 	_putchar('\n');
-	print_number(402);
+	print_number(-402);
 	_putchar('\n');
-	print_number(1024);
+	/**print_number(1024);
 	_putchar('\n');
 	print_number(0);
 	_putchar('\n');
 	print_number(-98);
 	_putchar('\n');
 	print_number(INT_MAX);
-	_putchar('\n');
+	_putchar('\n');*/
 	print_number(INT_MIN);
 	_putchar('\n');
 	return (0);
