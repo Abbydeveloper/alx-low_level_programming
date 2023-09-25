@@ -41,7 +41,7 @@ void print_number(int n)
 			n = n * -1;
 			_putchar(45);
 		}
-		if (n = 0)
+		if (n == 0)
 			_putchar(0 + '\0');
 		i = 1000000000;
 		print_digit(n, i);
