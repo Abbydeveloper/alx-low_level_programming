@@ -42,7 +42,7 @@ void print_number(int n)
 			_putchar(45);
 		}
 		if (n == 0)
-			_putchar(0 + '\0');
+			_putchar(48);
 		i = 1000000000;
 		print_digit(n, i);
 	}
