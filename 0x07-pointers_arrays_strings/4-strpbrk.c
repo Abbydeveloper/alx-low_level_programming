@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * strpbrk - search a string for any of a set of bytes
+ * _strpbrk - search a string for any of a set of bytes
  * @s: string to search
  * @accept: string to search for
  *
