@@ -5,7 +5,7 @@
  * _sqrt - run binary search to find square root
  * @start: number to start search from
  * @end: number to end search at
- * @mid: middle number
+ * @n: number to find square root of
  *
  * Return: square root
  */
@@ -20,7 +20,7 @@ int _sqrt(int start, int end, int n)
 
 		if ((mid * mid == n) &&
 				((mid + 1) * (mid + 1) > n))
-			return mid;
+			return (mid);
 		else if ((mid * mid) < n &&
 				mid > 0 &&
 				mid * mid != 0)
