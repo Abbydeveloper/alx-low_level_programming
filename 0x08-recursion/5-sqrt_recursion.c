@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <limits.h>
 /**
  * _sqrt - run binary search to find square root
  * @start: number to start search from
@@ -14,19 +14,22 @@ int _sqrt(int start, int end, int n)
 {
 	int mid;
 
-	if (start <= end)
+	if (end >= start)
 	{
 		mid = (start + end) / 2;
 
 		if ((mid * mid == n) &&
 				((mid + 1) * (mid + 1) > n))
 			return mid;
-		else if (mid * mid < n)
+		else if ((mid * mid) < n &&
+				mid > 0 &&
+				mid * mid != 0)
 			return (_sqrt(mid + 1, end, n));
 		else
 			return (_sqrt(start, mid - 1, n));
 	}
-	return (-1);
+	else
+		return (-1);
 }
 /**
  * _sqrt_recursion - return the natural square root of a number
