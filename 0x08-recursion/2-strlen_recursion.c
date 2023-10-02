@@ -2,8 +2,10 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - print a string in reverse using recursion
+ * _strlen_recursion - print length of a string using recursion
  * @s: string to print
+ *
+ * Return: length of string
  */
 
 int _strlen_recursion(char *s)
