@@ -5,7 +5,7 @@
  * isPalindrome - check if string is a palindrome
  * @s: string
  * @i: index counter
- * @j: end of index 
+ * @j: end of index
  *
  * Return: true if palindrome, false if not
  */
