@@ -24,7 +24,7 @@ int _isNumber(char s[])
 		else
 			return (0);
 	}
-	printf("%d\n", i);
+
 	return (1);
 }
 /**
