@@ -2,12 +2,14 @@
 
 /**
  * main - print function name
+ * @argc: argument count
+ * @argv: argument vector
  *
  * Return: Always 0
  */
 
-int main(void)
+int main(int argc, char **argv)
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", *argv[0]);
 	return (0);
 }
