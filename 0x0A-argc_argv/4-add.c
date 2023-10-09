@@ -13,15 +13,16 @@
 int _isNumber(char s[])
 {
 	int i = 0;
-	
+
 	if (s[0] == '-')
 		i = 1;
 
 	while (s[i] != '\0')
 	{
-		if (!isdigit(s[i]))
+		if (isdigit(s[i]))
+			i++;
+		else
 			return (0);
-		i++;
 	}
 	printf("%d\n", i);
 	return (1);
@@ -37,16 +38,12 @@ int _isNumber(char s[])
 
 int main(int argc, char **argv)
 {
-	int i, sum = 30;
+	int i, sum = 0;
 
 	if (argc >= 2)
 	{
-		for (i = 0; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
-			if (!_isNumber(argv[i]))
-				printf("Not a number");
-			else
-				printf("Yeah, that's a number alright");
 			if (_isNumber(argv[i]))
 				sum += atoi(argv[i]);
 			else
