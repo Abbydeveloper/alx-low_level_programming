@@ -14,19 +14,19 @@
 char *_strdup(char *str)
 {
 	char *p;
-	unsigned int i = 0;
+	unsigned int counter = 0, i = 0;
 
-	while (str[i] != 0)
-		i++;
+	if (str == NULL)
+		return (NULL);
 
-	if (i <= 0 || str == NULL)
-		return ('\0');
+	while (str[counter] != 0)
+		counter++;
 
-	p = (char *)malloc((sizeof(char) * i) + 1);
+	p = malloc((sizeof(char) * counter) + 1);
 
 	if (p == NULL)
-		return ('\0');
-	for (i = 0; str[i] != '\0'; i++)
+		return (NULL);
+	for (i = 0; i <= counter; i++)
 		p[i] = str[i];
 
 	return (p);
