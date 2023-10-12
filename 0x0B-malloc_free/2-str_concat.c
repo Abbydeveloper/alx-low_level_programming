@@ -16,6 +16,11 @@ char *str_concat(char *s1, char *s2)
 	unsigned int count1 = 0, count2 = 0, i = 0, j = 0;
 	char *p;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	while (s1[count1] != '\0')
 		count1++;
 
