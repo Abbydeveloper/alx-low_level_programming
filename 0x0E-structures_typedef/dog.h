@@ -1,6 +1,14 @@
 #ifndef DOG_H
 #define DOG_H
 
+/**
+ * struct dog - 
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: dog owner
+ *
+ */
+
 struct Dog
 {
 	char *name;
@@ -8,9 +16,15 @@ struct Dog
 	char *owner;
 };
 
-int main(void)
+struct Dog *dog(char *name, float age, char *owner)
 {
-	Struct Dog dog;
+	struct Dog *dog;
 
-	return (0);
+	dog = malloc(sizeof(struct Dog));
+	if (dog == NULL)
+		return (NULL);
+	dog->name = name;
+	dog->age = age;
+	dog->owner = owner;
+	return dog;
 }
