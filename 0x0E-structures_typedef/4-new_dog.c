@@ -43,6 +43,8 @@ char *_strcpy(char *new, char *s)
  * @name: name of dog
  * @age: age of dog
  * @owner: dog owner
+ *
+ * Return: new dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
