@@ -19,13 +19,14 @@ int main(int ac, char **av)
 		printf("Error\n");
 		exit(98);
 	}
-	for (i = 0; i < ac; i++)
+	for (i = 1; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
+
 			if (av[i][j] < 48 || av[i][j] > 57)
 			{
-				printf("Error\n");
+				printf(" EQZ Error\n");
 				exit(98);
 			}
 		}
