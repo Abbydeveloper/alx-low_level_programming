@@ -1,5 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+
+/**
+ * print_digit - print digit
+ * @n: digit to print
+ * @i: number of times to loop
+ */
+
+void print_digit(int n, int i)
+{
+	for (; i >= 1; i/= 10)
+	{
+		if (n / i != 0)
+			_putchar((n / i % 10) + '0');
+	}
+}
 
 /**
  * main - multiply two positive numbers
@@ -11,7 +27,7 @@
 
 int main(int ac, char **av)
 {
-	unsigned long mul;
+	unsigned long int mul;
 	int i, j;
 
 	if (ac < 3 || ac > 3)
@@ -33,6 +49,8 @@ int main(int ac, char **av)
 	}
 
 	mul = atoi(av[1]) * atoi(av[2]);
-	printf("%lu\n", mul);
+
+	print_digit(mul, 1000000000;
+
 	return (0);
 }
