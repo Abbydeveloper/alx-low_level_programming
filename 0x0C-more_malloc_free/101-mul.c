@@ -26,7 +26,7 @@ int main(int ac, char **av)
 
 			if (av[i][j] < 48 || av[i][j] > 57)
 			{
-				printf(" EQZ Error\n");
+				printf("Error\n");
 				exit(98);
 			}
 		}
