@@ -40,6 +40,7 @@ char *argstostr(int ac, char **av)
 		{
 			p[k] = '\n';
 			i++;
+			k++;
 			j = 0;
 		}
 		if (k < arg_len)
