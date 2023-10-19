@@ -1,8 +1,15 @@
 #include <stdio.h>
 
-void before_main() __attribute__((constructor));
+void before_main(void) __attribute__((constructor));
 
-void before_main()
+/**
+ * before_main - function before main
+ *
+ * Return: nothing
+ */
+
+void before_main(void)
 {
-	printf("You're beat! and yet, you muct allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you muct allow,");
+	printf("\nI bore my house upon my back!\n");
 }
