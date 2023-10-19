@@ -1,3 +1,5 @@
+	global main
+
 main:
 	push rbp;
 
