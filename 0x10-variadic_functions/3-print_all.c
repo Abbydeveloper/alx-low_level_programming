@@ -56,27 +56,33 @@ void print_all(const char * const format, ...)
 {
 	va_list arg_list;
 	int i = 0, j = 0;
+	char *separator = "";
 	prints_t prints[] = {
 		{"c", print_char},
 		{"i", print_integer},
 		{"f", print_float},
 		{"s", print_string}
 	};
-	int prints_len = 4;
 
 	va_start(arg_list, format);
 
 	while (format && format[i])
 	{
 		j = 0;
-		while (j < prints_len)
-		{
-			if (*(format + i) == *(prints[j].fmt))
-			{
-				prints[j].f(arg_list);
-				printf("%s", (j < prints_len - 1) ? ", " : "");
-			}
+
+		while (j < 4 && (format[i] != *(prints[j].fmt)))
 			j++;
+		if (j < 4)
+		{
+			printf("%s", separator);
+			/**if (*(format + i) == *(prints[j].fmt))
+			{*/
+			prints[j].f(arg_list);
+			separator = ", ";
+			/**printf("%s", (j < prints_len - 1) ? ", " : "");
+			}
+
+			j++;*/
 		}
 
 		i++;
