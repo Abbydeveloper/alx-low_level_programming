@@ -5,7 +5,7 @@
 
 /**
  * print_char - print only char
- * @s: char to print
+ * @a: list of arguments
  */
 void print_char(va_list a)
 {
@@ -14,7 +14,7 @@ void print_char(va_list a)
 
 /**
  * print_integer - print only integer
- * @i: int to print
+ * @a: list of arguments
  */
 void print_integer(va_list a)
 {
@@ -23,7 +23,7 @@ void print_integer(va_list a)
 
 /**
  * print_float - print only float
- * @f: float to print
+ * @a: list of arguments
  */
 void print_float(va_list a)
 {
@@ -32,7 +32,7 @@ void print_float(va_list a)
 
 /**
  * print_string - print only string
- * @str: string to print
+ * @a: list of arguments
  */
 void print_string(va_list a)
 {
@@ -71,17 +71,16 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 		while (j < prints_len)
-       		{
+		{
 			if (*(format + i) == *(prints[j].fmt))
 			{
 				prints[j].f(arg_list);
-				if (j < prints_len - 1)
-					printf(", ");
+				printf("%s", (j < prints_len - 1) ? ", " : "");
 			}
-                	j++;
+			j++;
 		}
 
-		i++;	
+		i++;
 	}
 	printf("\n");
 	va_end(arg_list);
