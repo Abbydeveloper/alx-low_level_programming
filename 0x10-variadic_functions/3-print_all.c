@@ -75,14 +75,18 @@ void print_all(const char * const format, ...)
 		if (j < 4)
 		{
 			printf("%s", separator);
-			/**if (*(format + i) == *(prints[j].fmt))
-			{*/
+			/**
+			* if (*(format + i) == *(prints[j].fmt))
+			* {
+			*/
 			prints[j].f(arg_list);
 			separator = ", ";
-			/**printf("%s", (j < prints_len - 1) ? ", " : "");
-			}
-
-			j++;*/
+			/**
+			* printf("%s", (j < prints_len - 1) ? ", " : "");
+			* }
+			*
+			* j++;
+			*/
 		}
 
 		i++;
