@@ -40,13 +40,12 @@ void print_string(va_list a)
 
 	str = va_arg(a, char *);
 
-	if (str != NULL)
-		printf("%s", str);
-	else
+	if (str == NULL)
 	{
 		printf("(nil)");
 		return;
 	}
+		printf("%s", str);
 }
 
 /**
