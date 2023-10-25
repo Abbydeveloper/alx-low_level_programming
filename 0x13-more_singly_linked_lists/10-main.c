@@ -10,7 +10,9 @@
  */
 int main(void)
 {
+	int n;
 	listint_t *head;
+	listint_t *head2;
 
 	head = NULL;
 	add_nodeint_end(&head, 0);
@@ -26,7 +28,7 @@ int main(void)
 	delete_nodeint_at_index(&head, 5);
 	print_listint(head);
 	printf("-----------------\n");
-	delete_nodeint_at_index(&head, 0);
+	/**delete_nodeint_at_index(&head, 0);
 	print_listint(head);
 	printf("-----------------\n");
 	delete_nodeint_at_index(&head, 0);
@@ -57,11 +59,19 @@ int main(void)
 	delete_nodeint_at_index(&head, 0);
 	printf("-----------------\n");
 	delete_nodeint_at_index(&head, 0);
-	printf("-----------------\n");
+	printf("-----------------\n");*/
 	delete_nodeint_at_index(&head, 0);
 	printf("-----------------\n");
 	delete_nodeint_at_index(&head, 0);
 	printf("-----------------\n");
 	delete_nodeint_at_index(&head, 0);
+
+	head2 = NULL;
+	add_nodeint_end(&head2, -12);
+	add_nodeint_end(&head2, 6);
+	n = delete_nodeint_at_index(&head2, 10);
+	delete_nodeint_at_index(&head2, 1);
+	print_listint(head2);
+	printf("ooooooooooooooooo\n %d\n", n);
 	return (0);
 }
