@@ -53,7 +53,7 @@ char **strtow(char *str)
 }
 
 /**
- * _free_innter_array - free up inner parts of a two-dimensional array
+ * _free_inner_array - free up inner parts of a two-dimensional array
  * @pointer: pointer to array
  * @size: size
  */
