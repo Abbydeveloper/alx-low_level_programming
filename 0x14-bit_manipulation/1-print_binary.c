@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -20,6 +20,6 @@ void print_binary(unsigned long int n)
 		n >>=1;
 	}
 
-	for (i = len(a); i >= 0; i--)
+	for (i = strlen(a); i >= 0; i--)
 		_putchar(str[i]);
 }
