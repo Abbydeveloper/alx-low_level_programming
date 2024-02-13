@@ -8,7 +8,7 @@
 
 void print_binary(unsigned long int n)
 {
-	char a[] = "";
+	char** a;
 	int i;
 
 	while(n)
