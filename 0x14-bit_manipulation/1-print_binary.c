@@ -4,7 +4,7 @@
 
 /**
  * print_binary - print binary representation of a number
- * @n - number to convert to binary
+ * @n: number to convert to binary
  */
 
 void print_binary(unsigned long int n)
