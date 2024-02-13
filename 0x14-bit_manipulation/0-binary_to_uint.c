@@ -6,7 +6,7 @@
  * @b: binary number to convert
  *
  * Return: 0 if b is NULL or not not binary
- * 	else return converted number
+ *	else return converted number
  */
 
 unsigned int binary_to_uint(const char *b)
