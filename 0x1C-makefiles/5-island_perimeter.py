@@ -2,11 +2,10 @@
 """Defines an island perimeter measuring function."""
 
 
-
 def island_perimeter(grid):
-    """ Return island perimeter.
+    """Return the perimeter of an island.
 
-    0 is a water zone. 1 is a land zone.
+    The grid represents water by 0 and land by 1.
 
     Args:
         grid (list): a list of list of integers.
