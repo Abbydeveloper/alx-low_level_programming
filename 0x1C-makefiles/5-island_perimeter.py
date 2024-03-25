@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-
 """Define a function to measure the perimeter of an island"""
 
+
 def island_perimeter(grid):
-    """
-    Return island perimeter
+    """ Return island perimeter
 
     0 is a water zone
     1 is a land zone
