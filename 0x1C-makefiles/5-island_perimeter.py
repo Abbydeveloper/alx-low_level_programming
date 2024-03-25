@@ -5,15 +5,13 @@
 def island_perimeter(grid):
     """ Return island perimeter.
 
-    0 is a water zone.
-    1 is a land zone.
+    0 is a water zone. 1 is a land zone.
 
     Args:
         grid (list): a list of list of integers.
     Returns:
         Island perimeter.
     """
-
     edge = 0
     size = 0
     height = len(grid)
