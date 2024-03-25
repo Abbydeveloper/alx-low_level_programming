@@ -1,0 +1,10 @@
+PHONY = all
+
+CC = gcc
+
+LINKERFLAG = -o
+
+SRCS := main.c school.c
+
+all:
+	${CC} ${SCRS} ${LINKERFLAG} school
